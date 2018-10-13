@@ -1,11 +1,13 @@
 package com.example.pooria.boomranq.Retrofit;
 
 import com.example.pooria.boomranq.Model.GetPost;
+import com.example.pooria.boomranq.Model.Likes;
 import com.example.pooria.boomranq.Model.Post_Inf;
 import com.example.pooria.boomranq.Model.SendPost;
 
 import java.util.List;
 
+import io.reactivex.Single;
 import retrofit2.Call;
 import retrofit2.http.Field;
 import retrofit2.http.FormUrlEncoded;
@@ -48,9 +50,23 @@ public interface MyBoomranQAPI {
     @POST("upload.php")
     Call<SendPost> upload_Post(@Field("title") String title, @Field("link") String link);
 
+    @FormUrlEncoded
+    @POST("SaveComments.php")
+    Call<SendPost> upload_Comment(@Field("comment") String comment, @Field("post_id") String post_id);
+
+
+    @FormUrlEncoded
+    @POST("SaveLikes.php")
+    Call<SendPost> upload_Likes(@Field("like") String like, @Field("post_id") String post_id);
+
+
+    @GET("ShowLikes.php")
+    Call<List<Likes>> show_Likes();
+
+
 
     @GET("showPosts.php")
-    Call<List<GetPost>> show_Posts();
+    Single<List<GetPost>> show_Posts();
 
 
     @GET("ShowWithDates.php")

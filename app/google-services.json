@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "898395997113",
+    "firebase_url": "https://boomranq-ae863.firebaseio.com",
+    "project_id": "boomranq-ae863",
+    "storage_bucket": "boomranq-ae863.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898395997113:android:9e3ef065112814fb",
+        "android_client_info": {
+          "package_name": "com.example.pooria.boomranq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898395997113-5hs4te28hg2ap6d0k21k873c2vb0c8lj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7i_wijuXWUlj8sOs_uuBv_1A5Cf7I_X4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
